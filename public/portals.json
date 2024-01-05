@@ -1,4 +1,8 @@
 {
+  "avail": {
+    "name": "Avail",
+    "url": "https://metadata.availproject.org/"
+  },
   "parity": {
     "name": "Parity",
     "url": "https://metadata.parity.io/"

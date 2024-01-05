@@ -6,6 +6,7 @@ import collectivesSrc from "./assets/icons/collectives.svg";
 import kusamaSrc from "./assets/icons/kusama.svg";
 import westendSrc from "./assets/icons/westend.svg";
 import rococoSrc from "./assets/icons/rococo.svg";
+import availSrc from "./assets/icons/data-avail.svg";
 import { nodesEncointerBlueSVG } from "./assets/icons/encointer-SVG";
 import { contractsPNG } from "./assets/icons/contracts-PNG";
 
@@ -26,6 +27,7 @@ const ICONS = {
   "rococo-bridge-hub-rococo": bridgeHubBlackSrc,
   "rococo-contracts-rococo": contractsPNG,
   "rococo-encointer-parachain": nodesEncointerBlueSVG,
+  "data-avail": availSrc,
 };
 
 export function icon(network: string) {

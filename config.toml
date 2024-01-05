@@ -3,120 +3,131 @@ public_dir = "public"
 qr_dir = "public/qr"
 
 [verifier]
-name = "Parity"
-public_key = "c46a22b9da19540a77cbde23197e5fd90485c72b4ecf3c599ecca6998f39bd57"
+name = "Avail"
+public_key = "0x0687ecfe54a6970a799958522f58646c446891535cc54fa5cd0d7c3a8f6ab105"
 
 [[chains]]
-name = "polkadot"
-rpc_endpoint = "wss://rpc.polkadot.io"
-color = "#e6007a"
+name = "data-avail"
+title = "Avail Goldberg"
+color = "#2596be"
+rpc_endpoints = ["wss://goldberg.avail.tools/ws"]
+testnet = true
 
-[chains.github_release]
-owner = "paritytech"
-repo = "polkadot"
-genesis_hash = "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3"
+# [verifier]
+# name = "Parity"
+# public_key = "c46a22b9da19540a77cbde23197e5fd90485c72b4ecf3c599ecca6998f39bd57"
 
-[[chains]]
-name = "statemint"
-title = "Asset Hub"
-rpc_endpoint = "wss://polkadot-asset-hub-rpc.polkadot.io"
-color = "#86e62a"
-relay_chain = "polkadot"
+# [[chains]]
+# name = "polkadot"
+# rpc_endpoint = "wss://rpc.polkadot.io"
+# color = "#e6007a"
 
-[[chains]]
-name = "bridge-hub-polkadot"
-title = "Bridge Hub"
-rpc_endpoint = "wss://polkadot-bridge-hub-rpc.polkadot.io"
-relay_chain = "polkadot"
+# [chains.github_release]
+# owner = "paritytech"
+# repo = "polkadot"
+# genesis_hash = "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3"
 
-[[chains]]
-name = "collectives"
-title = "Collectives"
-rpc_endpoint = "wss://polkadot-collectives-rpc.polkadot.io"
-color = "#e6777a"
-relay_chain = "polkadot"
+# [[chains]]
+# name = "statemint"
+# title = "Asset Hub"
+# rpc_endpoint = "wss://polkadot-asset-hub-rpc.polkadot.io"
+# color = "#86e62a"
+# relay_chain = "polkadot"
 
-[[chains]]
-name = "kusama"
-rpc_endpoint = "wss://kusama-rpc.polkadot.io"
-color = "#000000"
+# [[chains]]
+# name = "bridge-hub-polkadot"
+# title = "Bridge Hub"
+# rpc_endpoint = "wss://polkadot-bridge-hub-rpc.polkadot.io"
+# relay_chain = "polkadot"
 
-[chains.github_release]
-owner = "paritytech"
-repo = "polkadot"
-genesis_hash = "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe"
+# [[chains]]
+# name = "collectives"
+# title = "Collectives"
+# rpc_endpoint = "wss://polkadot-collectives-rpc.polkadot.io"
+# color = "#e6777a"
+# relay_chain = "polkadot"
 
-[[chains]]
-name = "statemine"
-title = "Asset Hub"
-rpc_endpoint = "wss://kusama-asset-hub-rpc.polkadot.io"
-color = "#113911"
-relay_chain = "kusama"
+# [[chains]]
+# name = "kusama"
+# rpc_endpoint = "wss://kusama-rpc.polkadot.io"
+# color = "#000000"
 
-[[chains]]
-name = "bridge-hub-kusama"
-title = "Bridge Hub"
-rpc_endpoint = "wss://kusama-bridge-hub-rpc.polkadot.io"
-relay_chain = "kusama"
+# [chains.github_release]
+# owner = "paritytech"
+# repo = "polkadot"
+# genesis_hash = "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe"
 
-[[chains]]
-name = "encointer-parachain"
-title = "Encointer"
-rpc_endpoint = "wss://kusama.api.encointer.org"
-color = "#0000cc"
-relay_chain = "kusama"
+# [[chains]]
+# name = "statemine"
+# title = "Asset Hub"
+# rpc_endpoint = "wss://kusama-asset-hub-rpc.polkadot.io"
+# color = "#113911"
+# relay_chain = "kusama"
 
-[[chains]]
-name = "westend"
-rpc_endpoint = "wss://westend-rpc.polkadot.io"
-color = "#f27230"
+# [[chains]]
+# name = "bridge-hub-kusama"
+# title = "Bridge Hub"
+# rpc_endpoint = "wss://kusama-bridge-hub-rpc.polkadot.io"
+# relay_chain = "kusama"
 
-[chains.github_release]
-owner = "paritytech"
-repo = "polkadot"
-genesis_hash = "0xe143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e"
+# [[chains]]
+# name = "encointer-parachain"
+# title = "Encointer"
+# rpc_endpoint = "wss://kusama.api.encointer.org"
+# color = "#0000cc"
+# relay_chain = "kusama"
 
-[[chains]]
-name = "westmint"
-title = "Asset Hub"
-rpc_endpoint = "wss://westend-asset-hub-rpc.polkadot.io"
-color = "#77bb77"
-relay_chain = "westend"
+# [[chains]]
+# name = "westend"
+# rpc_endpoint = "wss://westend-rpc.polkadot.io"
+# color = "#f27230"
 
-[[chains]]
-name = "collectives-westend"
-rpc_endpoint = "wss://westend-collectives-rpc.polkadot.io"
-color = "#e6777a"
-relay_chain = "westend"
+# [chains.github_release]
+# owner = "paritytech"
+# repo = "polkadot"
+# genesis_hash = "0xe143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e"
 
-[[chains]]
-name = "rococo"
-rpc_endpoint = "wss://rococo-rpc.polkadot.io"
-color = "#6f36dc"
+# [[chains]]
+# name = "westmint"
+# title = "Asset Hub"
+# rpc_endpoint = "wss://westend-asset-hub-rpc.polkadot.io"
+# color = "#77bb77"
+# relay_chain = "westend"
 
-[[chains]]
-name = "statemine"
-title = "Asset Hub"
-rpc_endpoint = "wss://rococo-asset-hub-rpc.polkadot.io"
-color = "#77bb77"
-relay_chain = "rococo"
+# [[chains]]
+# name = "collectives-westend"
+# rpc_endpoint = "wss://westend-collectives-rpc.polkadot.io"
+# color = "#e6777a"
+# relay_chain = "westend"
 
-[[chains]]
-name = "bridge-hub-rococo"
-title = "Bridge Hub"
-rpc_endpoint = "wss://rococo-bridge-hub-rpc.polkadot.io"
-relay_chain = "rococo"
+# [[chains]]
+# name = "rococo"
+# rpc_endpoint = "wss://rococo-rpc.polkadot.io"
+# color = "#6f36dc"
 
-[[chains]]
-name = "contracts-rococo"
-title = "Contracts"
-rpc_endpoint = "wss://rococo-contracts-rpc.polkadot.io"
-color = "#000000"
-relay_chain = "rococo"
+# [[chains]]
+# name = "statemine"
+# title = "Asset Hub"
+# rpc_endpoint = "wss://rococo-asset-hub-rpc.polkadot.io"
+# color = "#77bb77"
+# relay_chain = "rococo"
 
-[[chains]]
-name = "encointer-parachain"
-title = "Encointer"
-rpc_endpoint = "wss://rococo.api.encointer.org"
-color = "#0000cc"
-relay_chain = "rococo"
+# [[chains]]
+# name = "bridge-hub-rococo"
+# title = "Bridge Hub"
+# rpc_endpoint = "wss://rococo-bridge-hub-rpc.polkadot.io"
+# relay_chain = "rococo"
+
+# [[chains]]
+# name = "contracts-rococo"
+# title = "Contracts"
+# rpc_endpoint = "wss://rococo-contracts-rpc.polkadot.io"
+# color = "#000000"
+# relay_chain = "rococo"
+
+# [[chains]]
+# name = "encointer-parachain"
+# title = "Encointer"
+# rpc_endpoint = "wss://rococo.api.encointer.org"
+# color = "#0000cc"
+# relay_chain = "rococo"
